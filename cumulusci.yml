@@ -1,0 +1,11 @@
+minimum_cumulusci_version: 3.15.0
+project:
+    name: libraryProject
+    package:
+        name: Sample project for failure when the robot test calls a deploy task and metadata in this project and fails.
+        namespace: 
+        api_version: 49.0
+    source_format: sfdx
+    git:
+        default_branch: main
+        https://github.com/alex-smithSF/libraryProject
