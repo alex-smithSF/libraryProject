@@ -3,15 +3,15 @@ project:
     name: libraryProject
     package:
         name: Sample project for failure when the robot test calls a deploy task and metadata in this project and fails.
-        api_version: '50.0'
+        api_version: 49.0
     source_format: sfdx
     git:
         default_branch: main
         repo_url: https://github.com/alex-smithSF/libraryProject
 
-    tasks:
-        deploy_this_is_a_sample_deploy_task:
-            description: Sample task - Deploys the settings to allow admins to log in as any user. To call this, copy the files in the "path" to your repro.
-            class_path: cumulusci.tasks.salesforce.Deploy
-            options:
-                path: metadata/LoginAsUserSettings
+tasks:
+    deploy_this_is_a_sample_deploy_task:
+        description: Sample task - Deploys the settings to allow admins to log in as any user. To call this, copy the files in the path to your repro.
+        class_path: cumulusci.tasks.salesforce.Deploy
+        options:
+            path: metadata/LoginAsUserSettings
